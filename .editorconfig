@@ -1,0 +1,42 @@
+#   ╔═╗╔╦╗╦╔╦╗╔═╗╦═╗┌─┐┌─┐┌┐┌┌─┐┬┌─┐
+#   ║╣  ║║║ ║ ║ ║╠╦╝│  │ ││││├┤ ││ ┬
+#  o╚═╝═╩╝╩ ╩ ╚═╝╩╚═└─┘└─┘┘└┘└  ┴└─┘
+#
+#  http://editorconfig.org/
+#
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.tsv]
+indent_style = tab
+trim_trailing_whitespace = false
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.json]
+indent_size = 4
+
+
+[*.{cs,vb}]
+dotnet_diagnostic.CA1822.severity = none # Suggestions for static methods
+dotnet_diagnostic.IDE0047.severity = none # Remove unnecessary parentheses - https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048
+dotnet_diagnostic.IDE0063.severity = none # Use simple 'using' statement - https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/IDE0063
+dotnet_diagnostic.IDE1006.severity = none # Disable naming rules
+dotnet_diagnostic.xUnit1004.severity = none # Allow skipping test methods
+
+# # -----------------------------------------------------------------------------
+# # Unused Code
+# # -----------------------------------------------------------------------------
+# dotnet_diagnostic.CS0168.severity = none # Unused variables
+# dotnet_diagnostic.IDE0051.severity = none # Unused methods
+# dotnet_diagnostic.IDE0052.severity = none # Unused private members
+# dotnet_diagnostic.IDE0059.severity = none # Unused values
+# dotnet_diagnostic.IDE0060.severity = none # Unused parameters
