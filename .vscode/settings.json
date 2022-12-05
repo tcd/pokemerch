@@ -1,4 +1,12 @@
 {
+    "files.exclude": {
+        // Version Control
+        "**/.git": true,
+        // Visual Studio / C# / .NET
+        "**/.vs": true,
+        "**/bin": true,
+        "**/obj": true,
+    },
     "cSpell.words": [
         "Pokémerch"
     ]
