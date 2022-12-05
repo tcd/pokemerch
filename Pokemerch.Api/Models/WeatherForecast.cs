@@ -1,4 +1,4 @@
-namespace Pokemerch.Api
+namespace Pokemerch.Api.Models
 {
     public class WeatherForecast
     {
